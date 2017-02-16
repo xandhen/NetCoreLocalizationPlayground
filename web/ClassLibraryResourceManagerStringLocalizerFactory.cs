@@ -36,6 +36,8 @@ namespace WebApp
         {
             if (typeInfo.Name.Equals("LocalClass")) {
                 string z = base.GetResourcePrefix(typeInfo, baseNamespace, resourcesRelativePath);
+                z = z.Substring(z.IndexOf('.') + 1);
+                z = z.Substring(z.IndexOf('.') + 1);
                 return z;
             }
 

@@ -39,3 +39,6 @@ Thumbs.db
 
 # Visual studio metadata directory
 .vs
+
+# Visual Studio Code
+.vscode
