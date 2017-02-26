@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary
+namespace lib.x
 {
     public class Class1
     {

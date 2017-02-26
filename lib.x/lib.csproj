@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
-    <RootNamespace>ClassLibrary</RootNamespace>
-    <AssemblyName>ClassLibrary</AssemblyName>
+    <RootNamespace>lib.x</RootNamespace>
+    <AssemblyName>lib.x</AssemblyName>
   </PropertyGroup>
 
 </Project>

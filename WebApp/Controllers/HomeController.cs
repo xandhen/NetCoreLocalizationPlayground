@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
-using ClassLibrary;
+using lib.x;
 using System.Resources;
 using System.Globalization;
 
