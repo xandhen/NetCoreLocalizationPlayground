@@ -49,7 +49,7 @@
     </PackageReference>
   </ItemGroup>
 <ItemGroup>
-  <ProjectReference Include="..\lib\lib.csproj" />
+  <ProjectReference Include="..\lib.x\lib.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />

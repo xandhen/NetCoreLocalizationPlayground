@@ -26,13 +26,18 @@ namespace WebApp
 
 		protected static List<CultureInfo> supportedCultures = new List<CultureInfo>
 		{
-			new CultureInfo("se")
+			new CultureInfo("sv-SE")
 		};
 		protected static List<CultureInfo> supportedUICultures = new List<CultureInfo>
 		{
+			new CultureInfo("sv"),
 			new CultureInfo("sv-SE"),
 			new CultureInfo("en-US"),
-			new CultureInfo("no")
+			new CultureInfo("en"),
+			new CultureInfo("nn-NO"),
+			new CultureInfo("nb-NO"),
+			new CultureInfo("nn"),
+			new CultureInfo("nb")
 		};
 
         public Startup(IHostingEnvironment env)
@@ -47,7 +52,13 @@ namespace WebApp
 				// These are the cultures the app supports for formatting numbers, dates, etc.
 				SupportedCultures = supportedCultures,
 				// These are the cultures the app supports for UI strings, i.e. we have localized resources for.
-				SupportedUICultures = supportedUICultures
+				SupportedUICultures = supportedUICultures,
+				RequestCultureProviders = new List<IRequestCultureProvider>
+				{
+					new QueryStringRequestCultureProvider { Options = LocalizationOptions },
+					new CookieRequestCultureProvider { Options = LocalizationOptions },
+					new AcceptLanguageHeaderRequestCultureProvider { Options = LocalizationOptions }
+				}
 			};
 		}
 
